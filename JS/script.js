@@ -6,4 +6,15 @@
         {nome:"Angela Lopez",ruolo:"Social Media Manager",immagine:"angela-lopez-social-media-manager.jpg"},
         {nome:"Scott Estrada",ruolo:"Developer",immagine:"scott-estrada-developer.jpg"},
         {nome:"Barbara Ramos",ruolo:"Graphic Designer",immagine:"barbara-ramos-graphic-designer.jpg"}
-    ]
+    ];
+
+
+    //stampo in console il nome ed il ruolo dei lavoratori tramite ciclo 
+
+    for (let i = 0; i < lista_lavoratori.length; i++) {
+        const element = lista_lavoratori[i];
+        for(let key in lista_lavoratori[i]){
+            console.log(lista_lavoratori[i]["nome"],lista_lavoratori[i]["ruolo"])
+        }      
+    };
+    
