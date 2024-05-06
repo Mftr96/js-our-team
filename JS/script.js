@@ -12,32 +12,18 @@
     let nomi_lavoratori=document.getElementById("team-nomi");
     let ruoli_lavoratori=document.getElementById("team-ruolo");
     let immagini_lavoratori=document.getElementById("team-immagine");
-    //stampo in console il nome ed il ruolo dei lavoratori tramite ciclo
-    
-    
 
-    //creo funzione per stampare in pagina  
-    function f_lavoratori(element){
-        let nome =document.createElement("li");
-        let ruolo =document.createElement("li");
-        let immagine=document.createElement("li");
 
-        
-        nome.innerText+=element.nome;
-        ruolo.innerText+=element.ruolo;
-        immagine.innerText+=element.immagine;      
-        nomi_lavoratori.append(nome);
-        ruoli_lavoratori.append(ruolo);
-        immagini_lavoratori.append(immagine);
-        
-    }   
 
+
+    //stampo in console il nome ed il ruolo dei lavoratori tramite ciclo  
     for (let i = 0; i < lista_lavoratori.length; i++) {
         const element = lista_lavoratori[i];
         for(let key in element){
             console.log(element["nome"],element["ruolo"]);
         }
         f_lavoratori(element);
+        f_immagini(element);
        
     };
     

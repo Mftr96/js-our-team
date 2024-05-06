@@ -28,6 +28,11 @@ creazione array col nome lista_lavoratori in cui si mettono dentro gli oggetti
 milestone 1 fatta con doppio ciclo
 
 milestone 2
-creo la funzione inserendo come argomento l'oggetto, 
-ho richiamato il div dall'html in JS, adesso dovrei provare a scrivere innertext nel div richiamato in js 
+richiamo le tre ul in JS 
+dichiaro la funzione (fuori dal ciclo)
+nella quale creo i li al quale vengono poi messi dentro i dati degli oggetti 
+
+-----------------------------------
+esecuzione bonus 1 
+per fare bonus 1 l'idea di fondo è creare il tag img tramite JS (createElement) richiamando nel src
 
