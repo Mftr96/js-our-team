@@ -8,13 +8,18 @@
         {nome:"Barbara Ramos",ruolo:"Graphic Designer",immagine:"barbara-ramos-graphic-designer.jpg"}
     ];
 
-
+    //milestone 2:richiamo in JS il div 
+    let pagina_lavoratori=document.getElementById("team");
     //stampo in console il nome ed il ruolo dei lavoratori tramite ciclo 
 
     for (let i = 0; i < lista_lavoratori.length; i++) {
         const element = lista_lavoratori[i];
-        for(let key in lista_lavoratori[i]){
-            console.log(lista_lavoratori[i]["nome"],lista_lavoratori[i]["ruolo"])
-        }      
+        for(let key in element){
+            console.log(element["nome"],element["ruolo"]);
+        } 
+        function f_lavoratori(){
+            let testo=pagina_lavoratori.innerText="ciao";
+            return testo;
+        }   
     };
     
