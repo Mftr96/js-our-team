@@ -17,7 +17,7 @@
         for(let key in element){
             console.log(element["nome"],element["ruolo"]);
         } 
-        function f_lavoratori(){
+        function f_lavoratori(element){
             let testo=pagina_lavoratori.innerText="ciao";
             return testo;
         }   
